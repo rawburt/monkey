@@ -1,0 +1,8 @@
+(library
+ (name monkey)
+ (modules ast parser lexer evaluator environment obj builtin))
+
+(menhir
+ (modules parser))
+
+(ocamllex lexer)
